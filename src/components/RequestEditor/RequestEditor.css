@@ -1,0 +1,35 @@
+.editor-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.editor-header {
+  background-color: var(--light-bg);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  font-weight: bold;
+}
+
+.request-editor {
+  flex: 1;
+  padding: 1rem;
+  font-family: monospace;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.request-editor.invalid {
+  background-color: #fff0f0;
+}
+
+.editor-error {
+  color: var(--error-color);
+  padding: 0.5rem 1rem;
+  background-color: #fff0f0;
+}
